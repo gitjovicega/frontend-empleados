@@ -3,21 +3,20 @@ import { Container, Navbar, Nav, Dropdown, DropdownButton, Row} from 'react-boot
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
-import './navar.css';
+import './Nabvar.css';
 
-export default class menu extends React.Component {
+export default class Menu extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
 
     render() { 
         return (  
             <Navbar fixed="top" id="navbar" bg="primary" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Parking
-                    <span id="usuario-sub-branm"></span>
-                    </Navbar.Brand>
+                    <img className="img-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="Logo"/>
+                    <Navbar.Brand href="#home">Empresa JV & Balbin <span id="usuario-sub-branm"></span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
